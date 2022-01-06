@@ -28,7 +28,15 @@ setup(
         'seaborn==0.8.1',
         'tensorflow>=1.8.0,<2.0',
         'torch==1.3.1',
-        'tqdm'
+        'tqdm',
+        # Python IDE Dependencies
+        'pylint',
+        'pydocstyle',
+        'pycodestyle',
+        'flake8',
+        'yapf',
+        'autopep8'
+        # End
     ],
     description="Teaching tools for introducing people to deep RL.",
     author="Joshua Achiam",
