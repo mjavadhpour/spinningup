@@ -14,6 +14,7 @@ RUN if [ -f "/tmp/conda-tmp/environment.yml" ]; then umask 0002 && /opt/conda/bi
 
 # Create spinnig up env
 RUN conda create -n spinningup python=3.6
+RUN conda install --name spinningup pylint pydocstyle pycodestyle flake8 yapf autopep8
 
 # [Optional] Uncomment this section to install additional OS packages.
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
